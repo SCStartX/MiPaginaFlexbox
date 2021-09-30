@@ -11,34 +11,28 @@ body{
   flex-flow: column nowrap;
 }
     .header{
-        background: url(../imagenes/bg.jpg);
+        background: url(../imagenes/bg-2.jpg);
         background-position: center;
         background-attachment: contain;
         background-size: cover;
-		    display: flex;
+		display: flex;
         flex-flow: column nowrap;
     }
         .menu{
-            background: #2b4029;
-			      display: flex;
-			      flex-flow: row nowrap;
-			      height: 100px
-            align-items: center;
+            background: rgba(0,0,0,.1);
+			    display: flex;
+			    flex-flow: row nowrap;
+			    height: 100px
+				align-items: center;
         }
             .logo{
-                background: #ea5455;
                 flex: 1 1 auto;
-				        height: 30px;
             }
             .nav{
-                background: #ea5455;
                 flex: 5 1 auto;
-				        height: 30px;
             }
             .social{
-                background: #ea5455;
-				        flex: 1 1 auto;
-				        height: 30px;
+				flex: 1 1 auto;
             }
         .texto-principal{
             background: #f07b3f;
