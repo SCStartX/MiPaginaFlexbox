@@ -6,6 +6,9 @@
 body{
 	font-family: 'Montserrat', sans-serif;
 }
+a{
+	text-decoration: none;
+}
 .padre{
   display: flex;
   flex-flow: column nowrap;
@@ -22,18 +25,44 @@ body{
             background: rgba(0,0,0,.1);
 			    display: flex;
 			    flex-flow: row nowrap;
-			    height: 100px
+			    /*height: 100px*/
 				align-items: center;
         }
             .logo{
                 flex: 1 1 auto;
             }
+				.logo a{
+					color: #fff;
+					font-size: 30px;
+				}
+				.logo a:hover{
+					color: #343434;
+				}
             .nav{
                 flex: 5 1 auto;
             }
+				.nav a{
+					color: #fff;
+					font-size: 11px;
+					text-transform: uppercase;
+					padding: 0 10px;
+					letter-spacing: 2px;
+				}
+				.nav a:hover{
+					color: #343434;
+				}
             .social{
 				flex: 1 1 auto;
+				display: flex;
             }
+				.social a{
+					color:#fff;
+					font-size: 18px;
+					padding: 0 5px;
+				}
+				.social a:hover{
+					color: #343434;
+				}
         .texto-principal{
             background: #f07b3f;
         }
@@ -42,37 +71,37 @@ body{
             }
     .section{
         background: #000;
-		    display: flex;
+		display: flex;
     }
         .articulos{
             background: #4e4e6a;
-			      flex: 2 1 auto;
-			      display: flex;
-			      flex-flow: row wrap;
+			flex: 2 1 auto;
+			display: flex;
+			flex-flow: row wrap;
         }
           article{
-              background: #1f6cb0;
-				      flex: 1 1 40%;
+				background: #1f6cb0;
+				flex: 1 1 40%;
           }
           .navegacion{
-            background: #70a3c4;
-			      flex: 1 1 100%;
+				background: #70a3c4;
+				flex: 1 1 100%;
           }
           .aside{
-            background: #f73f52;
-			      flex: 1 1 auto;
+				background: #f73f52;
+				flex: 1 1 auto;
           }
           .publicidad{
-            background: #ffea85;
+				background: #ffea85;
           }
     .footer{
         background: #000;
-		    display: flex;
-		    justify-content: center;
+		display: flex;
+		justify-content: center;
     }
       .pie{
         background: #e6af2e;
-		    width: 300px;
+		width: 300px;
       }
 @media all and (max-width: 800px){
 	.section{
@@ -80,7 +109,7 @@ body{
 	}
 	.menu{
 		flex-direction: column;
-    height: auto;
+		height: auto;
 	}
 	.aside{
 		display: flex;
